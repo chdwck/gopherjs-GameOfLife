@@ -1,0 +1,13 @@
+{
+  "name": "hellogopherjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "GOOS=linux gopherjs build ./src/gameOfLife.go -o ./public/script.js",
+    "build:min": "GOOS=linux gopherjs build -m ./src/gameOfLife.go -o ./public/script.js",
+    "serve": "go run server.go"
+  },
+  "author": "",
+  "license": "ISC"
+}
